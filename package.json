@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc",
-    "test": "jest"
+    "test": "tsc && jest"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/jest": "^21.1.5",
+    "fsevents": "^2.1.2",
     "jest": "^21.2.1",
     "ts-jest": "^21.1.4",
     "typescript": "^2.6.1"
